@@ -1,10 +1,10 @@
 import vue from 'rollup-plugin-vue';
 import babel from "rollup-plugin-babel";
-import commonjs from ' rollup-plugin-commonjs';
+import commonjs from 'rollup-plugin-commonjs';
 import resolve from 'rollup-plugin-node-resolve';
 import { uglify } from 'rollup-plugin-uglify';
-import { terser } from 'rollup-plugin-terser';
-import { eslint } from 'rollup-plugin-eslint';
+// import { terser } from 'rollup-plugin-terser';
+// import { eslint } from 'rollup-plugin-eslint';
 
 export default {
     input: 'JsonExcel.vue',
@@ -35,6 +35,6 @@ export default {
         }),
         // eslint(),
         // terser(),
-        uglify()
+        // uglify()
     ]
 }
