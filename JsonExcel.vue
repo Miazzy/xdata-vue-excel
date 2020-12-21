@@ -24,13 +24,13 @@ export default {
     // if no given, all the properties in the Json are exported
     fields: {
       type: Object,
-      default: () => null,
+      default: function(){ return null },
     },
     // this prop is used to fix the problem with other components that use the
     // variable fields, like vee-validate. exportFields works exactly like fields
     exportFields: {
       type: Object,
-      default: () => null,
+      default: function(){ return null },
     },
     // Use as fallback when the row has no field values
     defaultValue: {
@@ -56,7 +56,7 @@ export default {
     },
     meta: {
       type: Array,
-      default: () => [],
+      default: function(){ return [] },
     },
     worksheet: {
       type: String,
