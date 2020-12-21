@@ -11,14 +11,14 @@ Download your JSON data as an Excel file directly from the browser. This compone
 Get the package:
 
 ```bash
-npm install vue-json-excel
+npm install xdata-vue-excel
 ```
 
 Register JsonExcel in your vue app entry point:
 
 ```js
 import Vue from "vue";
-import JsonExcel from "vue-json-excel";
+import JsonExcel from "xdata-vue-excel";
 
 Vue.component("downloadExcel", JsonExcel);
 ```
